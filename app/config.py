@@ -14,8 +14,8 @@ class ProductionConfig(Config):
     """Production Config that extends the Base Config Object"""
     DEBUG = False
 class Config(object):
-     """Base Config Object"""
-    DEBUG - False
+    """Base Config Object"""
+    DEBUG = False
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'Som3$ec5etK*y'
     MAIL_SERVER = os.environ.get('MAIL_SERVER') or 'localhost'
     MAIL_PORT = os.environ.get('MAIL_PORT') or '25'
